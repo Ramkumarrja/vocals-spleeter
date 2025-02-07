@@ -6,7 +6,7 @@ app = Flask(__name__)
 separator = Separator('spleeter:2stems')  # Use the 2-stem model
 
 
-@app.route('/process', methods=['GET'])
+@app.route('/', methods=['GET'])
 def server_checking():
     return jsonify({"message":"server running"})
 
