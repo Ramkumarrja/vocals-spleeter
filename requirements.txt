@@ -1,9 +1,9 @@
 # Spleeter and its dependencies
 spleeter==2.4.0
-tensorflow==2.11.0  # You may need to adjust the version based on compatibility
-numpy==1.23.4  # Adjust to a compatible version
+tensorflow==2.9.0  # Compatible with Spleeter 2.4.0
+numpy==1.23.4  # Ensure this version of NumPy is compatible
 ffmpeg-python==0.2.0  # Optional: If you're processing audio files with ffmpeg
 
 # Additional dependencies
-librosa==0.9.1  # For audio processing (optional depending on use case)
-scipy==1.10.0    # SciPy is often needed for signal processing
+librosa==0.9.1  # Optional depending on use case
+scipy==1.10.0    # For signal processing (optional)
