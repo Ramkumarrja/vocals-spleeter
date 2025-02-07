@@ -1,0 +1,10 @@
+{
+    "build": {
+      "nixpacks": {
+        "plan": {
+          "start": "python app.py"
+        }
+      }
+    }
+  }
+  
