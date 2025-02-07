@@ -5,6 +5,11 @@ from spleeter.separator import Separator
 app = Flask(__name__)
 separator = Separator('spleeter:2stems')  # Use the 2-stem model
 
+
+@app.route('/process', methods=['GET'])
+def server_checking():
+    return jsonify({"message":"server running"})
+
 @app.route('/process', methods=['POST'])
 def process_audio():
     if 'file' not in request.files:
